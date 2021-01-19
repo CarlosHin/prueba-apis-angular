@@ -1,0 +1,13 @@
+<div class="list">
+
+    <p-card class="personaje" *ngFor="let p of lista" [header]="p.name"  [subheader]="''"  styleClass="p-card-shadow">
+        <p-header>
+            <img alt="Card" [src]="p.image">
+            <a [routerLink]="'/rickandmorty/character/' +p.id ">
+                <button pButton type="button" label="Info" icon="pi pi-info" class="p-button-secondary" ></button>
+            </a>
+        </p-header>
+        <ng-template pTemplate="footer">
+        </ng-template>
+    </p-card>
+</div>

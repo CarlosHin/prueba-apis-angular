@@ -1,0 +1,15 @@
+<div class="list">
+
+    <p-card class="personaje" *ngFor="let p of lista" (click)="showDialog(p)">
+        <p-header>
+            <h2>{{p.name}}</h2>
+        </p-header>
+        Altura: {{p.height}}cm <br>
+        Peso: {{p.mass}} Kg
+    </p-card>
+</div>
+
+<p-dialog [header]="actual.name" [(visible)]="display" [style]="{width: '50vw'}">
+    {{actual.height}} cm <br>
+    {{actual.mass}} kg
+</p-dialog>

@@ -1,0 +1,19 @@
+<p-toast position="top-center"></p-toast>
+<h1>Star wars</h1>
+<form [formGroup]="form" (ngSubmit)="buscar()">
+    <input pInputText type="text" formControlName="name">
+    <button pButton type="submit" label="Buscar" ></button>
+
+</form>
+
+
+<div *ngIf="loading" class="list">
+    <p-skeleton class="skeleton" height="50vh"></p-skeleton>
+    
+</div>
+<p *ngIf="noResults">Sin resultados</p>
+<h2 *ngIf="form.value.name !== '' && !noResults">Resultados para "{{form.value.name}}"</h2>
+<p-chart type="bar" [data]="dataBar" *ngIf="showBar" heigt="200px"></p-chart>
+<app-star-wars-list [lista]="lista"></app-star-wars-list>
+
+

@@ -1,0 +1,29 @@
+<p-toast position="top-center"></p-toast>
+<h1>Rick and Morty</h1>
+<form [formGroup]="form" (ngSubmit)="buscar()">
+    <input pInputText type="text" formControlName="name">
+    <button pButton type="submit" label="Buscar" ></button>
+</form>
+
+<div *ngIf="loading" class="list">
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    <p-skeleton class="personaje"  height="300px"></p-skeleton>
+    
+
+    
+</div>
+<app-rick-morty-list [lista]="lista"></app-rick-morty-list>

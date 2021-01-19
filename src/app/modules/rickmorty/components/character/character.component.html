@@ -1,0 +1,10 @@
+<p-card [header]="name" [subheader]="gender" [style]="{width: '360px'}" styleClass="p-card-shadow">
+    <p-header>
+        <img alt="Card" [src]="image">
+    </p-header>
+    <b>Species:</b> {{species}}
+    <p><b>Status:</b> {{status}}</p>
+    <p><b>Origin:</b> {{origin}}</p>
+    <ng-template pTemplate="footer">
+    </ng-template>
+</p-card>

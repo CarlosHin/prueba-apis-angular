@@ -1,0 +1,8 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.personaje {
+    width: 300px;
+    margin:10px;
+}

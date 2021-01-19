@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.personaje {
+    width: 300px;
+    margin:10px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+.personaje:hover {
+    transform: scale(1.25);
+}
